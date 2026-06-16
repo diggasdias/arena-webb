@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- Esse é um documento HTML 5 -->
+<html lang="pt-BR"> <!-- A língua principal é português do Brasil -->
+
+<head> <!-- Aqui fica as configurações da página-->
+    <meta charset="UTF-8"> <!-- A página começa a trabalhar com acentos e caracteres especiais-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Preparando a página para melhorar a reponsividade para os diversos dispositivos que existem-->
+    <title>Arena</title> <!-- Texto que fica na aba do site -->
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body> <!-- É todo o conteúdo visível da página-->
+
+    <main class="container-principal">
+        <section class="tela tela-apresentacao">
+            <div class="apresentacao-conteudo">
+                <p class="etiqueta-projeto">Projeto HTML, CSS e JavaScript</p>
+
+                <h1 class="titulo-principal">Arena</h1>
+
+                <p class="descricao">Escolha seu jogador ,conheça seus atributos e entre na arena para travar batalhas
+                    épicas contra advesários poderosos.Use ataques,habilidades especiais e estratégias de defesa para
+                    provar que é o verdadeiro campeão</p>
+
+                <button class="botao" id="botao-iniciar" type="button">Iniciar</button>
+            </div>
+
+            <div class="apresentacao-visual">
+                <img src="./src/img/p-2.png" alt="" class="imagem-personagem">
+
+            </div>
+        </section>
+
+        <section class="tela tela-selecao">
+            <div class="cabecalho">
+                <p class="cta">Selecione seu personagem</p>
+
+                <button class="botao" id="botao-selecionar" type="button">Selecionar</button>
+            </div>
+
+            <div class="container-selecao">
+                <div class="carta-personagem mago" id="carta-personagem">
+
+                </div>
+
+                <div class="carta-personagem arqueiro" id="carta-personagem">
+
+                </div>
+
+                <div class="carta-personagem druida" id="carta-personagem">
+
+                </div>
+
+                <div class="carta-personagem monge" id="carta-personagem">
+
+                </div>
+
+                <div class="carta-personagem guerreiro" id="carta-personagem">
+
+                </div>
+
+                <div class="carta-personagem espadachim" id="carta-personagem">
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="tela tela-confirmacao ativa">
+            <div class="confirmacao-visual">
+                <img src="./src/img/Mago-Photoroom.png" alt="personagem selecionado" id="imagem-personagem-confirmado">
+            </div>
+
+            <div class="confirmacao-conteudo">
+                <h2 class="personagem-nome" id="personagem-nome">mago</h2>
+
+                <p class="personagem-descricao" id="personagem-descricao">
+                    Mago é um poderoso feiticeiro de aparência imponente, com longos cabelos grisalhos, barba espessa e
+                    vestes antigas marcadas pelo tempo. Em uma mão, ele conjura uma esfera de energia azul brilhante; na
+                    outra, empunha um cajado adornado por um cristal mágico. Sua presença transmite sabedoria, mistério
+                    e um poder ancestral capaz de desafiar as forças mais sombrias do mundo
+                </p>
+
+                <div class="painel-atributos">
+                    <div class="atributo atributo-ataque" id="atributo atributo-ataque">
+                        <span class="atributo-nome">Ataque</span>
+
+                        <div class="barra-preenchimento">
+                          <div class="barra-ataque"></div>
+                        </div>
+
+                        <span class="atributo-valor" id="atributo-valor">8</span>
+                    </div>
+
+                    <button class="botao" id="botao-confirmar" type="button">
+                        confirmar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
